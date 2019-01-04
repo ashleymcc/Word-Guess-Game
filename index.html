@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Word Guess</title>
+		<!--CSS-->
+		
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+       
+		<!--Viewpoint Metatag-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div id="you-lose" class="you-lose">
+		<p>You Lose...</p>
+		<button type="button" onclick="startAgain()" id="replay" class="btn">Play Again</button>
+	</div>
+	<!--Header Begins-->
+	<header>
+		<h1>Color Word Guess</h1>
+		<div id="win"><h3>Press any key to get started!</h3></div>
+	</header>
+	<!--Main Section Begins-->
+	<main>
+	<!--Main Container-->
+	<div class="container">
+
+		<!--Row: Game-->
+		<div class="row">
+
+			<!--Column: Hangman and Letters Guessed-->
+			<div class="col-md-4 col-sm-6 col-xs-12">
+
+				
+			<!--Row: Wrong letters guessed placed here-->
+				<div class="row">
+					<h3>Letters Guessed</h3>
+					<ul id="wrong"></ul>
+				</div>
+
+			</div>
+		
+			<!--Column: Word and Progress-->
+			<div class="col-md-8 col-sm-6 col-xs-12">
+				<div class="row">
+					<!--Word placed here-->
+					<div id="word"></div>
+				</div>
+				<div class="row score">
+					<!--Remaining Guesses-->
+					<div class="guess-box score-box">
+						<h3>Guesses</h3>
+						<div id="guess"></div>
+					</div>
+					<!--Win Count-->
+					<div class="win-box score-box">
+						<h3>Wins</h3>
+						<div id="win-count"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Win Message-->
+		
+		
+	</div>
+
+	</main>
+
+	<!--Link to Javascript-->
+	<script src="assets/javascript/game.js"></script>
+</body>
+</html>
