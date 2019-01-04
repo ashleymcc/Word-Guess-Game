@@ -26,6 +26,7 @@ var hangmanGame = {
 		document.getElementById("guess").innerHTML = "<h3>" + guessNumber + "</h3>";
     },
     
+
 	//Generate Word from Array
 	generateWord: function() {
         var words = [
@@ -141,14 +142,15 @@ document.onkeyup = function(event) {
 			hangmanGame.updateProgress(); //Update the progress
 		//If letter is wrong
 		} else {	
+            guessNumber--
 			hangmanGame.displayGuess();//Guess count goes down and new guess is displayed 
-			hangmanGame.hangman();//Update hangman
+			
 		}
 		//If user guesses word
 		if (currentWord == userProgress) {
 			hangmanGame.userWins(); //Update user wins
 			hangmanGame.displayWins(); //Display wins
-			hangmanGame.resetHangman();//reset hangman
+			
 			playGame(); //Restart the game
 		//If user runs out of guesses
 		} else if (guessNumber == 0) {

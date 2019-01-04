@@ -37,7 +37,7 @@ div.score-box {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 3px dotted #888;
+	border: 5px dotted rgb(89, 146, 160);
 	padding: 20px;
 }
 
@@ -89,17 +89,6 @@ li {
 .you-lose {
 	display: none;
 }
-
-#you-lose p {
-	color: black;
-	font-size: 100px;
-}
-
-.lose-show {
-	display: flex;
-	animation: lose linear 1s;
-}
-
 
 
 /*Media Queries*/
