@@ -11,6 +11,7 @@
 // Navy #000080
 // Salmon #FA8072
 
+
 //Define Variables
 var guessNumber = 9; //number of guesses user has remaining
 var currentWord; //current word user is trying to guess
